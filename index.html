@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+    </style>
+    <title>RENAS CV</title>
+    <style>
+      #myTable{
+        width:48%;
+        margin-top:5%;
+      }
+      .social-media img{
+          width: 60px;          
+      }
+    </style>
+  </head>
+  <body>
+    
+    <center>  
+        <img src="assets/images/about.jpg" alt="" style="width:300px;margin-top:10%;">
+        <br><br>
+        <h2>Hello There, My Name Is RENAS</h2>        
+        <br>
+        <div class="social-media">
+          <img src="assets/images/Facebook.png" alt="">
+          <a href="http://twitter.com" target="_blank"><img src="assets/images/Twitter.png" alt=""></a>
+          <a href="https://www.instagram.com/invites/contact/?i=v8vyslnywndp&utm_content=63mfxqy"><img src="assets/images/instagram.png" alt=""></a>
+          
+          <a href="http://github.com/RENAS28" target="_blank"><img src="assets/images/Octocat.png" alt=""></a>
+        </div>
+        <table class="table" id="myTable">
+          <tr>
+            <td width="40%"><strong> Full Name </strong></td>
+            <td width="10%">:</td>
+            <td>Renas Aulia Maharani</td>
+          </tr>
+
+          <tr>
+            <td ><strong> Birth Date </strong></td>
+            <td>:</td>
+            <td>Pasuruan,28 Januari 2005</td>
+          </tr>
+
+          <tr>
+            <td ><strong> Age </strong></td>
+            <td>:</td>
+            <td>16 Years Old</td>
+          </tr>
+
+          <tr>
+            <td ><strong> Address </strong></td>
+            <td>:</td>
+            <td>RT 03 RW 03 Jln.Nongkojajar, Desa Lebakrejo , Kec.Purwodadi, Kab.Pasuruan, Jawa Timur</td>
+          </tr>
+
+          <tr>
+            <td ><strong> Educatiion </strong></td>
+            <td>:</td>
+            <td>
+              <ul>
+                <li>Tk PGRI GERBO 1 ( 2009 - 2010)</li>
+                <li>SDN GERBO 3 ( 2011 - 2016)</li>
+                <li>SMPN 1 PURWODADI( 2017 - 2020)</li>
+                <li>SMKN 1 PURWOSARI ( 2020 - NOW)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              Send Message To Me <br>
+              <form action="#">
+                <input type="text" class="form-control w-100" id="message">
+                <br>
+                <button type="button" id="send-message" data-wa="083115398175" class=" float-end btn btn-success">Send</button>
+              </form>
+            </td>
+          </tr>
+        </table>
+        <br><br><br>
+    </center>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
+    <script>
+      $(function(){
+        $('#send-message').click(function(){
+          var vals = $('#message').val();
+          window.location.assign('https://wa.me/'+$(this).data('wa')+'?text='+vals);
+        });
+      });
+    </script>
+  </body>
+</html>
